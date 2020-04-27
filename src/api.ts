@@ -1,4 +1,4 @@
 
-import {WAPJSONReader} from './WAPJSONReader';
-export {WAPJSONReader};
-export default WAPJSONReader;
+import {WAPJSON} from './WAPJSON';
+export {WAPJSON};
+export default WAPJSON;

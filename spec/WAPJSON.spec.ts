@@ -5,15 +5,15 @@ import {
     WebAssetPack,
     PluginManager
 } from '@wap/test-tools';
-import WAPJSONReader from '../src/WAPJSONReader';
+import WAPJSON from '../src/WAPJSON';
 import def from './support/def.json';
 import expectation from './support/test-pkg/data.json';
 
-describe('WAPJSONReader', () => {
+describe('WAPJSON', () => {
     let reader: WAPReader = new WAPReader();
 
     beforeAll(() => {
-        PluginManager.getInstance().addPlugin('json', new WAPJSONReader());
+        PluginManager.getInstance().addPlugin('json', new WAPJSON());
     });
 
     it('reads file properly', async () => {
