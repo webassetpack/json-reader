@@ -1,14 +1,14 @@
 
 import * as api from '../src/api';
-import WAPJSONReader from '../src/WAPJSONReader';
+import WAPJSON from '../src/WAPJSON';
 import APIDefault from '../src/api';
 
 describe('Public API', () => {
     it('Named import', () => {
-        expect(api.WAPJSONReader).toBe(WAPJSONReader);
+        expect(api.WAPJSON).toBe(WAPJSON);
     });
 
     it('Default import', () => {
-        expect(APIDefault).toBe(WAPJSONReader);
+        expect(APIDefault).toBe(WAPJSON);
     });
 });
