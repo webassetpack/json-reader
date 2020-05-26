@@ -1,6 +1,7 @@
 
 import {
     WAPTestTools,
+    WAPTestFactory,
     WAPReader,
     WebAssetPack,
     PluginManager
@@ -10,7 +11,7 @@ import def from './support/def.json';
 import expectation from './support/test-pkg/data.json';
 
 describe('WAPJSON', () => {
-    let reader: WAPReader = new WAPReader();
+    let reader: WAPReader = new WAPReader(new WAPTestFactory());
 
     beforeAll(() => {
         PluginManager.getInstance().addPlugin('json', new WAPJSON());

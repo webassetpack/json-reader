@@ -1,3 +1,5 @@
 {
-    "test.json": "./spec/support/test-pkg/data.json"
+    "test.json": {
+        "path": "./spec/support/test-pkg/data.json"
+    }
 }
